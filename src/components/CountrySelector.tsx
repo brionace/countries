@@ -4,7 +4,7 @@ import { COUNTRIES } from '../utils'
 import { TextField, withStyles, Box } from '@material-ui/core';
 import { Autocomplete } from '@material-ui/lab';
 
-// Declare styles for Countries component
+// Declare styles 
 const styles = () => ({
     icon: {
         color: 'inherit',
@@ -18,7 +18,7 @@ const styles = () => ({
       },
 });
 
-// Declare countries interfaces and constant variables
+// Declare interfaces
 interface NameEmoji{
     name: string,
     emoji: string
@@ -29,7 +29,7 @@ interface CountryType{
 }
   
 /**
- * Countries component
+ * Country Selector component
  * @param props 
  * @returns Autocomplete element
  */
@@ -38,7 +38,7 @@ function CountrySelector(props: any) {
     const { data }  = useQuery<CountryType>(COUNTRIES);
 
 
-    // Return countries selector
+    // Return Countries Selector
     return (
         <Box p={3}>
             <Autocomplete
