@@ -14,14 +14,14 @@ import {
     withStyles } 
 from '@material-ui/core';
 
-// Declare styles for Countries component
+// Declare styles
 const styles = () => ({
     icon: {
         color: 'inherit',
     }
 });
 
-// Declare countries interfaces and constant variables
+// Declare interfaces
 interface NameEmoji{
     name: string,
     emoji: string
